@@ -1,0 +1,158 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #0a1f44;
+  color: white;
+}
+
+.app {
+  width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #a50044;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #a50044, #004d98);
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.hero button {
+  padding: 12px 24px;
+  border: none;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* PROJECTS */
+
+.projects {
+  padding: 80px 10%;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-card {
+  background: #1c2c5b;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card button {
+  margin-top: 15px;
+  background: #ffcc00;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ABOUT */
+
+.about {
+  padding: 80px 10%;
+  background: #004d98;
+  text-align: center;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #a50044;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+}
